@@ -3,6 +3,7 @@ import { getEquipoById } from '@/app/actions/equipos'
 import EquiposDetalleClient from './EquiposDetalleClient'
 
 export const metadata = { title: 'Detalle del Equipo — Mobilhospital' }
+export const dynamic = 'force-dynamic'
 
 export default async function EquipoDetallePage({ params }: { params: { id: string } }) {
     const supabase = createClient()

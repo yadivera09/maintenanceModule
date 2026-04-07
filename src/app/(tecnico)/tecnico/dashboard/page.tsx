@@ -2,6 +2,9 @@ import DashboardClient from './DashboardClient'
 import { getMisReportes } from '@/app/actions/reportes'
 import { createClient } from '@/lib/supabase/server'
 
+export const metadata = { title: 'Mi Panel — Mobilhospital' }
+export const dynamic = 'force-dynamic'
+
 export default async function TecnicoDashboard() {
     const { data: misReportes } = await getMisReportes()
     const supabase = createClient()

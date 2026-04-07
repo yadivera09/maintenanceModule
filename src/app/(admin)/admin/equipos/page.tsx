@@ -9,6 +9,7 @@ import { getCategorias } from '@/app/actions/catalogos'
 import EquiposPageClient from './EquiposPageClient'
 
 export const metadata = { title: 'Equipos — Mobilhospital' }
+export const dynamic = 'force-dynamic'
 
 export default async function EquiposPage() {
     const supabase = createClient()
