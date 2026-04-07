@@ -2,6 +2,8 @@ import { createAdminClient } from '@/lib/supabase/admin'
 import { getReportesAdmin } from '@/app/actions/reportes'
 import ReportesAdminClient from './ReportesAdminClient'
 
+export const dynamic = 'force-dynamic'
+
 export default async function ReportesPage() {
     const [reportesRes, tiposRes] = await Promise.all([
         getReportesAdmin(),

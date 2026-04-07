@@ -1,6 +1,8 @@
 import MisReportesClient from './MisReportesClient'
 import { getMisReportes } from '@/app/actions/reportes'
 
+export const dynamic = 'force-dynamic'
+
 export default async function MisReportesPage() {
     const { data: misReportes } = await getMisReportes()
 
